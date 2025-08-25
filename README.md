@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Anambra Web3 Conference 2.0 Landing Page
+
+A modern, professional, and visually striking landing page for the Anambra Web3 Conference 2.0, built with Next.js and Tailwind CSS.
+
+## Features
+
+- **Modern Design**: Clean, futuristic Web3 aesthetic with bold typography
+- **Responsive Layout**: Mobile-first design that works on all devices
+- **Smooth Animations**: CSS transitions and hover effects for enhanced UX
+- **Brand Colors**: Uses the official brand colors (#010147 deep navy blue, #9e94ff soft lavender/purple)
+- **Interactive Elements**: Smooth scrolling navigation and interactive components
+
+## Sections
+
+1. **Hero Section**: Full-width banner with Web3 patterns and Niger Bridge silhouette
+2. **About Section**: Conference information with icon representations
+3. **Achievements**: Key statistics and accomplishments
+4. **Why Attend**: Three compelling reasons to attend
+5. **Speakers**: Grid layout for featured speakers
+6. **Hackathon**: Dedicated section for the 2025 hackathon
+7. **Partners & Sponsors**: Logo grid for sponsors
+8. **Call to Action**: Final registration section
+9. **Footer**: Quick links and contact information
+
+## Tech Stack
+
+- **Next.js 15**: React framework with App Router
+- **Tailwind CSS 4**: Utility-first CSS framework
+- **TypeScript**: Type-safe JavaScript
+- **React 19**: Latest React features
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Build
+
+To build for production:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Design Elements
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Color Scheme**: Deep navy blue (#010147) and soft lavender (#9e94ff)
+- **Typography**: Clean, modern fonts with proper hierarchy
+- **Patterns**: Web3-inspired geometric elements and hexagons
+- **Animations**: Smooth transitions and hover effects
+- **Layout**: Grid-based design with proper spacing and alignment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Customization
 
-## Learn More
+The landing page is built with Tailwind CSS classes and can be easily customized by:
+- Modifying the color variables in `globals.css`
+- Updating content in the main component
+- Adjusting spacing and layout using Tailwind utilities
+- Adding new sections or modifying existing ones
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is created for the Anambra Web3 Conference 2.0.
