@@ -5,9 +5,17 @@ import Image from 'next/image';
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
+  const [currentBg, setCurrentBg] = useState(0);
 
   useEffect(() => {
     setIsVisible(true);
+    
+    // Background carousel effect
+    const interval = setInterval(() => {
+      setCurrentBg((prev) => (prev + 1) % 3);
+    }, 5000); // Change every 5 seconds
+
+    return () => clearInterval(interval);
   }, []);
 
   const scrollToSection = (sectionId: string) => {
@@ -24,7 +32,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <div className="text-2xl font-bold text-[#010147]">AW3C</div>
+              <div className="text-2xl font-bold text-[#010147]">
+                <Image src={"/logo.jpeg"} alt='' width={130} height={100} />
+              </div>
             </div>
             <div className="hidden md:flex space-x-8">
               <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-[#9e94ff] transition-colors">About</button>
@@ -44,9 +54,39 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background with Web3 patterns */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#010147] via-[#010147]/90 to-[#9e94ff]/20">
-          <div className="absolute inset-0 opacity-10">
+        {/* Background Images Carousel */}
+        <div className="absolute inset-0">
+          {/* First background image */}
+          <div className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-2000 ${
+            currentBg === 0 ? 'opacity-20' : 'opacity-0'
+          }`}
+               style={{
+                 backgroundImage: "url('/image1.jpg')",
+               }}>
+          </div>
+          
+          {/* Second background image */}
+          <div className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-2000 ${
+            currentBg === 1 ? 'opacity-20' : 'opacity-0'
+          }`}
+               style={{
+                 backgroundImage: "url('/AW3C-212.jpg')",
+               }}>
+          </div>
+          
+          {/* Third background image */}
+          <div className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-2000 ${
+            currentBg === 2 ? 'opacity-20' : 'opacity-0'
+          }`}
+               style={{
+                 backgroundImage: "url('/AW3C-213.jpg')",
+               }}>
+          </div>
+        </div>
+        
+        {/* Overlay with Web3 patterns */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#010147]/80 via-[#010147]/70 to-[#9e94ff]/40">
+          <div className="absolute inset-0 opacity-20">
             {/* Hexagon pattern */}
             <div className="absolute top-20 left-20 w-32 h-32 border border-white/20 rotate-45"></div>
             <div className="absolute top-40 right-32 w-24 h-24 border border-white/20 rotate-45"></div>
@@ -56,7 +96,7 @@ export default function Home() {
         </div>
         
         {/* Niger Bridge silhouette */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 opacity-20">
+        <div className="absolute bottom-0 left-0 right-0 h-32 opacity-30">
           <svg viewBox="0 0 1200 120" className="w-full h-full">
             <path d="M0,120 L200,80 L400,60 L600,40 L800,60 L1000,80 L1200,120 Z" fill="white"/>
           </svg>
@@ -65,10 +105,10 @@ export default function Home() {
         {/* Hero content */}
         <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-lg">
               Anambra Web3 Conference 2.0
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-8 text-white/95 max-w-3xl mx-auto drop-shadow-md">
               Limitless Possibilities — November 1st, 2025 | Stanel Dome, Awka
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -255,8 +295,15 @@ export default function Home() {
           {/* Main Group Picture */}
           <div className="mb-12">
             <div className="bg-gradient-to-r from-[#010147]/10 to-[#9e94ff]/20 p-8 rounded-2xl">
-              <div className="w-full h-64 bg-gradient-to-br from-[#9e94ff]/40 to-[#010147]/40 rounded-xl flex items-center justify-center mb-4">
-                <span className="text-6xl">👥</span>
+              <div className="w-full h-[500px] rounded-xl overflow-hidden mb-4">
+                <Image 
+                  src="/Volunteers.jpg" 
+                  alt="Volunteer Team 2024" 
+                  width={800} 
+                  height={800} 
+                  className="w-full h-full object-cover object-center"
+                  priority
+                />
               </div>
               <p className="text-center text-lg text-[#010147] font-semibold">Volunteer Team 2024</p>
             </div>
