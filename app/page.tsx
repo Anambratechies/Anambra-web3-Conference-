@@ -37,15 +37,15 @@ export default function Home() {
               </div>
             </div>
             <div className="hidden md:flex space-x-8">
-              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-[#9e94ff] transition-colors">About</button>
-              <button onClick={() => scrollToSection('last-year')} className="text-gray-700 hover:text-[#9e94ff] transition-colors">2024 Highlights</button>
-              <button onClick={() => scrollToSection('volunteers')} className="text-gray-700 hover:text-[#9e94ff] transition-colors">Volunteers</button>
-              <button onClick={() => scrollToSection('team')} className="text-gray-700 hover:text-[#9e94ff] transition-colors">Team</button>
-              <button onClick={() => scrollToSection('achievements')} className="text-gray-700 hover:text-[#9e94ff] transition-colors">Achievements</button>
-              <button onClick={() => scrollToSection('hackathon')} className="text-gray-700 hover:text-[#9e94ff] transition-colors">Hackathon</button>
-              <button onClick={() => scrollToSection('partners')} className="text-gray-700 hover:text-[#9e94ff] transition-colors">Partners</button>
+              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-[#010147] transition-colors">About</button>
+              <button onClick={() => scrollToSection('last-year')} className="text-gray-700 hover:text-[#010147] transition-colors">2024 Highlights</button>
+              <button onClick={() => scrollToSection('volunteers')} className="text-gray-700 hover:text-[#010147] transition-colors">Volunteers</button>
+              <button onClick={() => scrollToSection('team')} className="text-gray-700 hover:text-[#010147] transition-colors">Team</button>
+              <button onClick={() => scrollToSection('achievements')} className="text-gray-700 hover:text-[#010147] transition-colors">Achievements</button>
+              <button onClick={() => scrollToSection('hackathon')} className="text-gray-700 hover:text-[#010147] transition-colors">Hackathon</button>
+              <button onClick={() => scrollToSection('partners')} className="text-gray-700 hover:text-[#010147] transition-colors">Partners</button>
             </div>
-            <button className="bg-[#9e94ff] text-white px-6 py-2 rounded-full hover:bg-[#8a7fff] transition-colors">
+            <button className="bg-[#010147] text-white px-6 py-2 rounded-full hover:bg-[#8a7fff] transition-colors">
               Register Free
             </button>
           </div>
@@ -85,7 +85,7 @@ export default function Home() {
         </div>
         
         {/* Overlay with Web3 patterns */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#010147]/80 via-[#010147]/70 to-[#9e94ff]/40">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#010147]/80 via-[#010147]/70 to-[#010147]/80">
           <div className="absolute inset-0 opacity-20">
             {/* Hexagon pattern */}
             <div className="absolute top-20 left-20 w-32 h-32 border border-white/20 rotate-45"></div>
@@ -112,7 +112,7 @@ export default function Home() {
               Limitless Possibilities — November 1st, 2025 | Stanel Dome, Awka
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="bg-[#9e94ff] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#8a7fff] transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <button className="bg-[#010147] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#8a7fff] transition-all duration-300 transform hover:scale-105 shadow-lg">
                 Register Free
               </button>
               <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-[#010147] transition-all duration-300 transform hover:scale-105">
@@ -164,11 +164,11 @@ export default function Home() {
       </section>
 
       {/* Last Year Conference Section - Improved Side by Side */}
-      <section id="last-year" className="py-20 bg-gray-50">
+      <section id="last-year" className="py-20 bg-[#010147]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#010147] mb-6">2024 Conference Highlights</h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">Reliving the incredible moments from our groundbreaking first edition</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-[#ffffff] mb-6">2024 Conference Highlights</h2>
+            <p className="text-xl text-white max-w-4xl mx-auto">Reliving the incredible moments from our groundbreaking first edition</p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -312,11 +312,13 @@ export default function Home() {
           {/* Event Pictures from Last Year */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-[#010147] mb-6 text-center">Event Highlights 2024</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-3 gap-4">
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
                 <div key={i} className="bg-gradient-to-br from-[#010147]/10 to-[#9e94ff]/20 rounded-xl p-3 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                  <div className="w-full h-24 bg-gradient-to-br from-[#9e94ff]/30 to-[#010147]/30 rounded-lg flex items-center justify-center">
-                    <span className="text-2xl">📸</span>
+                  <div className="w-full h-64 bg-gradient-to-br from-[#9e94ff]/30 to-[#010147]/30 rounded-lg flex items-center justify-center">
+                    <span className="text-2xl">
+                      <Image src={'/AW3C-31.jpg'} alt='' height={1000} width={1000}/>
+                    </span>
                   </div>
                   <p className="text-center text-xs text-[#010147] mt-2">Event {i}</p>
                 </div>
