@@ -178,13 +178,14 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="bg-white p-4 rounded-2xl shadow-lg">
                     <div className="w-full h-48 bg-gradient-to-br from-[#9e94ff]/30 to-[#010147]/30 rounded-xl flex items-center justify-center">
-                      <span className="text-4xl">📸</span>
+                    <Image src={'/speakers.jpg'} alt='' width={600} height={600} />
+
                     </div>
                     <p className="text-center text-sm text-gray-600 mt-3">Opening Ceremony</p>
                   </div>
                   <div className="bg-white p-4 rounded-2xl shadow-lg">
                     <div className="w-full h-32 bg-gradient-to-br from-[#9e94ff]/30 to-[#010147]/30 rounded-xl flex items-center justify-center">
-                      <span className="text-3xl">🎤</span>
+                    <Image src={'/lead.jpg'} alt='' width={600} height={600} />
                     </div>
                     <p className="text-center text-sm text-gray-600 mt-3">Keynote Sessions</p>
                   </div>
@@ -192,13 +193,17 @@ export default function Home() {
                 <div className="space-y-4 pt-8">
                   <div className="bg-white p-4 rounded-2xl shadow-lg">
                     <div className="w-full h-32 bg-gradient-to-br from-[#9e94ff]/30 to-[#010147]/30 rounded-xl flex items-center justify-center">
-                      <span className="text-3xl">💻</span>
+                    <Image src={'/zikora.jpg'} alt='' width={600} height={600} />
+
                     </div>
                     <p className="text-center text-sm text-gray-600 mt-3">Hackathon</p>
                   </div>
                   <div className="bg-white p-4 rounded-2xl shadow-lg">
                     <div className="w-full h-48 bg-gradient-to-br from-[#9e94ff]/30 to-[#010147]/30 rounded-xl flex items-center justify-center">
-                      <span className="text-4xl">🏆</span>
+                      <span className="text-4xl">
+                      <Image src={'/award.jpg'} alt='' width={600} height={800} />
+
+                      </span>
                     </div>
                     <p className="text-center text-sm text-gray-600 mt-3">Awards Ceremony</p>
                   </div>
