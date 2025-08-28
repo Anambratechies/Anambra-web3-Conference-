@@ -296,14 +296,14 @@ export default function Home() {
           <div className="mb-12">
             <div className="bg-gradient-to-r from-[#010147]/10 to-[#9e94ff]/20 p-8 rounded-2xl">
               <div className="w-full h-[500px] rounded-xl overflow-hidden mb-4">
-                <Image 
+        <Image
                   src="/Volunteers.jpg" 
                   alt="Volunteer Team 2024" 
                   width={800} 
                   height={800} 
                   className="w-full h-full object-cover object-center"
-                  priority
-                />
+          priority
+        />
               </div>
               <p className="text-center text-lg text-[#010147] font-semibold">Volunteer Team 2024</p>
             </div>
@@ -313,14 +313,25 @@ export default function Home() {
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-[#010147] mb-6 text-center">Event Highlights 2024</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-3 gap-4">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
+              {[
+                '/AW3C-31.jpg',
+                '/AW3C-79.jpg', 
+                '/AW3C-124.jpg',
+                '/AW3C-161.jpg',
+                '/AW3C-182.jpg',
+                '/AW3C-184.jpg',
+                '/AW3C-195.jpg',
+                '/AW3C-196.jpg',
+                '/AW3C-209.jpg',
+                '/AW3C-212.jpg',
+                '/AW3C-213.jpg',
+                '/AW3C-228.jpg'
+              ].map((imageSrc, i) => (
                 <div key={i} className="bg-gradient-to-br from-[#010147]/10 to-[#9e94ff]/20 rounded-xl p-3 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                  <div className="w-full h-64 bg-gradient-to-br from-[#9e94ff]/30 to-[#010147]/30 rounded-lg flex items-center justify-center">
-                    <span className="text-2xl">
-                      <Image src={'/AW3C-31.jpg'} alt='' height={1000} width={1000}/>
-                    </span>
+                  <div className="w-full h-64 bg-gradient-to-br from-[#9e94ff]/30 to-[#010147]/30 rounded-lg flex items-center justify-center overflow-hidden">
+                    <Image src={imageSrc} alt='' height={1000} width={1000} className="w-full h-full object-cover"/>
                   </div>
-                  <p className="text-center text-xs text-[#010147] mt-2">Event {i}</p>
+                  <p className="text-center text-xs text-[#010147] mt-2">Event {i + 1}</p>
                 </div>
               ))}
             </div>
@@ -565,7 +576,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Be Part of History — Anambra Web3 Conference 2.0</h2>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Join us for the biggest Web3 event in South-East Nigeria. Don't miss this opportunity to shape the future of blockchain technology.
+            Join us for the biggest Web3 event in South-East Nigeria. Don&apos;t miss this opportunity to shape the future of blockchain technology.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button className="bg-white text-[#010147] px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
