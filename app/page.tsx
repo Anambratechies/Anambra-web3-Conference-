@@ -336,9 +336,9 @@ export default function Home() {
                   <div className="w-full h-64 bg-gradient-to-br from-[#9e94ff]/30 to-[#010147]/30 rounded-lg flex items-center justify-center overflow-hidden">
                     <Image src={imageSrc} alt='' height={1000} width={1000} className="w-full h-full object-cover"/>
                   </div>
-                  <p className="text-center text-xs text-[#010147] mt-2">Highlights {i + 1}</p>
+                  <p className="text-center text-xs text-[#010147] mt-2">Highlight {i + 1}</p>
                 </div>
-              ))}
+              ))} 
             </div>
           </div>
           
