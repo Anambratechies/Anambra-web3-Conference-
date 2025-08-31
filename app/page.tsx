@@ -214,17 +214,17 @@ export default function Home() {
               <div className="grid grid-cols-3 gap-3">
                 <div className="bg-white p-3 rounded-xl shadow-md">
                   <div className="w-full h-20 bg-gradient-to-br from-[#9e94ff]/20 to-[#010147]/20 rounded-lg flex items-center justify-center">
-                    <span className="text-2xl">🎉</span>
+                  <Image src={'/Avax-1.jpg'} alt='' width={600} height={800} />
                   </div>
                 </div>
                 <div className="bg-white p-3 rounded-xl shadow-md">
                   <div className="w-full h-20 bg-gradient-to-br from-[#9e94ff]/20 to-[#010147]/20 rounded-lg flex items-center justify-center">
-                    <span className="text-2xl">🤝</span>
+                  <Image src={'/solana.jpg'} alt='' width={600} height={800} />
                   </div>
                 </div>
                 <div className="bg-white p-3 rounded-xl shadow-md">
                   <div className="w-full h-20 bg-gradient-to-br from-[#9e94ff]/20 to-[#010147]/20 rounded-lg flex items-center justify-center">
-                    <span className="text-2xl">📚</span>
+                  <Image src={'/bitcoin.jpg'} alt='' width={600} height={800} />
                   </div>
                 </div>
               </div>
@@ -336,7 +336,7 @@ export default function Home() {
                   <div className="w-full h-64 bg-gradient-to-br from-[#9e94ff]/30 to-[#010147]/30 rounded-lg flex items-center justify-center overflow-hidden">
                     <Image src={imageSrc} alt='' height={1000} width={1000} className="w-full h-full object-cover"/>
                   </div>
-                  <p className="text-center text-xs text-[#010147] mt-2">Event {i + 1}</p>
+                  <p className="text-center text-xs text-[#010147] mt-2">Highlights {i + 1}</p>
                 </div>
               ))}
             </div>
