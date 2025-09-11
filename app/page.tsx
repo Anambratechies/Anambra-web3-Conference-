@@ -438,22 +438,22 @@ Launched in 2024 with over 1,700 attendees, the conference has become a hub of i
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center bg-gradient-to-r from-[#010147]/10 to-[#9e94ff]/20 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="text-5xl font-bold text-[#9e94ff] mb-2">🚀</div>
+              <div className="text-5xl font-bold text-[#9e94ff] mb-2"></div>
               <div className="text-4xl font-bold text-[#010147] mb-2">400+</div>
               <p className="text-gray-700">talents trained in Web3</p>
             </div>
             <div className="text-center bg-gradient-to-r from-[#010147]/10 to-[#9e94ff]/20 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="text-5xl font-bold text-[#9e94ff] mb-2">👨‍💻</div>
+              <div className="text-5xl font-bold text-[#9e94ff] mb-2"></div>
               <div className="text-4xl font-bold text-[#010147] mb-2">100+</div>
               <p className="text-gray-700">developers in Cairo Smart Contract Bootcamp</p>
             </div>
             <div className="text-center bg-gradient-to-r from-[#010147]/10 to-[#9e94ff]/20 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="text-5xl font-bold text-[#9e94ff] mb-2">🌍</div>
+              <div className="text-5xl font-bold text-[#9e94ff] mb-2"></div>
               <div className="text-4xl font-bold text-[#010147] mb-2">6,000+</div>
               <p className="text-gray-700">community members across campuses</p>
             </div>
             <div className="text-center bg-gradient-to-r from-[#010147]/10 to-[#9e94ff]/20 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="text-5xl font-bold text-[#9e94ff] mb-2">🏆</div>
+              <div className="text-5xl font-bold text-[#9e94ff] mb-2"></div>
               <div className="text-4xl font-bold text-[#010147] mb-2">1,700+</div>
               <p className="text-gray-700">attendees at 2024 conference</p>
             </div>
