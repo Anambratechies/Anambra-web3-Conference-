@@ -563,24 +563,24 @@ Launched in 2024 with over 1,700 attendees, the conference has become a hub of i
       </section>
 
       {/* Partners & Sponsors Section */}
-      <section id="partners" className="py-20 bg-gradient-to-br from-[#010147]/5 to-[#9e94ff]/10">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#010147] mb-6">Our Partners</h2>
-            <p className="text-xl text-gray-600">Proud to work with industry leaders</p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
-              <div key={i} className="bg-gradient-to-r from-[#010147]/10 to-[#9e94ff]/20 p-6 rounded-xl shadow-md flex items-center justify-center hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                <div className="w-20 h-20 bg-[#9e94ff]/30 rounded-lg flex items-center justify-center">
-                  <span className="text-sm text-[#010147]">Partner {i}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* <section id="partners" className="py-20 bg-gradient-to-br from-[#010147]/5 to-[#9e94ff]/10"> */}
+        {/* <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"> */}
+          {/* <div className="text-center mb-16"> */}
+            {/* <h2 className="text-4xl md:text-5xl font-bold text-[#010147] mb-6">Our Partners</h2> */}
+            {/* <p className="text-xl text-gray-600">Proud to work with industry leaders</p> */}
+          {/* </div> */}
+{/*            */}
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8"> */}
+            {/* {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => ( */}
+              {/* // <div key={i} className="bg-gradient-to-r from-[#010147]/10 to-[#9e94ff]/20 p-6 rounded-xl shadow-md flex items-center justify-center hover:shadow-lg transition-all duration-300 transform hover:scale-105"> */}
+                {/* <div className="w-20 h-20 bg-[#9e94ff]/30 rounded-lg flex items-center justify-center"> */}
+                  {/* <span className="text-sm text-[#010147]">Partner {i}</span> */}
+                {/* </div> */}
+              {/* </div> */}
+            {/* // ))} */}
+          {/* </div> */}
+        {/* </div> */}
+      {/* </section> */}
 
       {/* Final CTA Section */}
       <section className="py-20 bg-gradient-to-r from-[#010147] to-[#9e94ff]">
@@ -623,8 +623,8 @@ Launched in 2024 with over 1,700 attendees, the conference has become a hub of i
             <div>
               <h3 className="font-semibold mb-4">Connect</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Twitter</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">LinkedIn</a></li>
+                <li><a href="https://x.com/anambraweb3conf" className="text-gray-300 hover:text-white transition-colors">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/company/anambra-web3-conference/posts/?feedView=all" className="text-gray-300 hover:text-white transition-colors">LinkedIn</a></li>
                 <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Instagram</a></li>
               </ul>
             </div>
