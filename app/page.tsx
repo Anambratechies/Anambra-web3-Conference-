@@ -57,7 +57,7 @@ export default function Home() {
         {/* Background Images Carousel */}
         <div className="absolute inset-0">
           {/* First background image */}
-          <div className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-2000 ${
+          <div className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-[2000ms] ${
             currentBg === 0 ? 'opacity-20' : 'opacity-0'
           }`}
                style={{
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
           
           {/* Second background image */}
-          <div className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-2000 ${
+          <div className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-[2000ms] ${
             currentBg === 1 ? 'opacity-20' : 'opacity-0'
           }`}
                style={{
@@ -75,7 +75,7 @@ export default function Home() {
           </div>
           
           {/* Third background image */}
-          <div className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-2000 ${
+          <div className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-[2000ms] ${
             currentBg === 2 ? 'opacity-20' : 'opacity-0'
           }`}
                style={{
@@ -128,10 +128,11 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#010147] mb-6">About the Conference</h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              The largest Web3 conference in South-East Nigeria, bridging Web2 & Web3 talents, 
-              with 1,700+ attendees in 2024 and projected 2,500+ in 2025.
-            </p>
+            <p className="text-xl text-gray-600  mx-auto leading-relaxed">
+The Anambra Web3 Conference is the largest blockchain and Web3 gathering in South-East Nigeria, designed to educate, connect, and empower the next generation of builders, creators, and innovators.
+
+Launched in 2024 with over 1,700 attendees, the conference has become a hub of innovation, attracting developers, students, startups, investors, and thought leaders from across Nigeria and beyond.</p>
+
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -214,7 +215,7 @@ export default function Home() {
               <div className="grid grid-cols-3 gap-3">
                 <div className="bg-white p-3 rounded-xl shadow-md">
                   <div className="w-full h-20 bg-gradient-to-br from-[#9e94ff]/20 to-[#010147]/20 rounded-lg flex items-center justify-center">
-                  <Image src={'/Avax-1.jpg'} alt='' width={600} height={800} />
+                  <Image src={'/Avax-1.JPG'} alt='' width={600} height={800} />
                   </div>
                 </div>
                 <div className="bg-white p-3 rounded-xl shadow-md">
@@ -372,60 +373,60 @@ export default function Home() {
       </section>
 
       {/* Team Section */}
-      <section id="team" className="py-20 bg-gradient-to-br from-[#010147]/5 to-[#9e94ff]/10">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#010147] mb-6">Meet Our Team</h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">The passionate individuals driving the Web3 revolution in Anambra State</p>
-          </div>
-          
-          {/* Core Team */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            {[
-              { name: "John Doe", role: "Conference Director", emoji: "👨‍💼" },
-              { name: "Jane Smith", role: "Technical Lead", emoji: "👩‍💻" },
-              { name: "Mike Johnson", role: "Community Manager", emoji: "👨‍🤝‍👨" },
-              { name: "Sarah Wilson", role: "Partnership Lead", emoji: "👩‍💼" }
-            ].map((member, i) => (
-              <div key={i} className="bg-gradient-to-r from-[#010147]/10 to-[#9e94ff]/20 p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="w-24 h-24 bg-[#9e94ff]/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">{member.emoji}</span>
-                </div>
-                <h3 className="font-semibold text-[#010147] mb-2">{member.name}</h3>
-                <p className="text-gray-700 text-sm mb-3">{member.role}</p>
-                <div className="flex justify-center space-x-3">
-                  <div className="w-8 h-8 bg-[#9e94ff]/30 rounded-full flex items-center justify-center">
-                    <span className="text-xs text-[#010147]">📧</span>
-                  </div>
-                  <div className="w-8 h-8 bg-[#9e94ff]/30 rounded-full flex items-center justify-center">
-                    <span className="text-xs text-[#010147]">🔗</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          {/* Extended Team */}
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {[
-              { name: "Alex", role: "DevOps", emoji: "👨‍💻" },
-              { name: "Maria", role: "Design", emoji: "🎨" },
-              { name: "David", role: "Marketing", emoji: "📢" },
-              { name: "Lisa", role: "Content", emoji: "✍️" },
-              { name: "Tom", role: "Security", emoji: "🔒" },
-              { name: "Emma", role: "Events", emoji: "🎪" }
-            ].map((member, i) => (
-              <div key={i} className="bg-gradient-to-r from-[#010147]/10 to-[#9e94ff]/20 p-4 rounded-xl shadow-md text-center hover:shadow-lg transition-all duration-300">
-                <div className="w-16 h-16 bg-[#9e94ff]/30 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-2xl">{member.emoji}</span>
-                </div>
-                <h3 className="font-semibold text-[#010147] text-sm mb-1">{member.name}</h3>
-                <p className="text-gray-700 text-xs">{member.role}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
       {/* Achievements Section */}
       <section id="achievements" className="py-20 bg-gradient-to-br from-[#010147]/5 to-[#9e94ff]/10">
