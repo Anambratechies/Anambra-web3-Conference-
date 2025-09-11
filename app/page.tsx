@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -45,9 +46,9 @@ export default function Home() {
               <button onClick={() => scrollToSection('hackathon')} className="text-gray-700 hover:text-[#010147] transition-colors">Hackathon</button>
               <button onClick={() => scrollToSection('partners')} className="text-gray-700 hover:text-[#010147] transition-colors">Partners</button>
             </div>
-            <button className="bg-[#010147] text-white px-6 py-2 rounded-full hover:bg-[#8a7fff] transition-colors">
+            <Link href="https://luma.com/5br1nzyi" className="bg-[#010147] text-white px-6 py-2 rounded-full hover:bg-[#8a7fff] transition-colors">
               Register Free
-            </button>
+            </Link>
           </div>
         </div>
       </nav>
@@ -112,9 +113,9 @@ export default function Home() {
               Limitless Possibilities — November 1st, 2025 | Stanel Dome, Awka
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="bg-[#010147] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#8a7fff] transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <Link href="https://luma.com/5br1nzyi" className="bg-[#010147] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#8a7fff] transition-all duration-300 transform hover:scale-105 shadow-lg">
                 Register Free
-              </button>
+              </Link>
               <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-[#010147] transition-all duration-300 transform hover:scale-105">
                 Become a Partner
               </button>
@@ -502,7 +503,7 @@ Launched in 2024 with over 1,700 attendees, the conference has become a hub of i
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-[#010147] mb-6">Hackathon 2025 — Build for the Future</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-[#010147] mb-6">Hackathon 2025  Build for the Future</h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Collaborate, innovate, and launch projects on-chain. Join hundreds of developers in building the next generation of Web3 applications.
               </p>
@@ -513,7 +514,7 @@ Launched in 2024 with over 1,700 attendees, the conference has become a hub of i
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-5 h-5 bg-[#9e94ff] rounded-full"></div>
-                  <span className="text-gray-700">$50,000+ in prizes</span>
+                  <span className="text-gray-700">$5,000+ in prizes</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-5 h-5 bg-[#9e94ff] rounded-full"></div>
@@ -531,7 +532,11 @@ Launched in 2024 with over 1,700 attendees, the conference has become a hub of i
             
             <div className="bg-gradient-to-br from-[#010147]/10 to-[#9e94ff]/20 p-8 rounded-2xl">
               <div className="text-center">
-                <div className="text-6xl mb-4">💻</div>
+              <div className="mb-4">
+                <div className="relative mx-auto rounded-xl overflow-hidden w-full max-w-md aspect-[4/3]">
+                  <Image src={'/AW3C-90.jpg'} alt="Hackathon" fill className="object-cover" sizes="(min-width: 1024px) 400px, (min-width: 640px) 320px, 100vw" priority />
+                </div>
+              </div>
                 <h3 className="text-2xl font-bold text-[#010147] mb-4">Hackathon Highlights</h3>
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div className="bg-white p-3 rounded-lg">
@@ -548,7 +553,7 @@ Launched in 2024 with over 1,700 attendees, the conference has become a hub of i
                   </div>
                   <div className="bg-white p-3 rounded-lg">
                     <div className="font-bold text-[#010147]">Prizes</div>
-                    <div className="text-gray-600">$50K+</div>
+                    <div className="text-gray-600">$2K+</div>
                   </div>
                 </div>
               </div>
