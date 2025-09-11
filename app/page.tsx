@@ -585,7 +585,7 @@ Launched in 2024 with over 1,700 attendees, the conference has become a hub of i
       {/* Final CTA Section */}
       <section className="py-20 bg-gradient-to-r from-[#010147] to-[#9e94ff]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Be Part of History — Anambra Web3 Conference 2.0</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Be Part of History Anambra Web3 Conference 2.0</h2>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Join us for the biggest Web3 event in South-East Nigeria. Don&apos;t miss this opportunity to shape the future of blockchain technology.
           </p>
