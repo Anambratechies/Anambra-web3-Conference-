@@ -34,7 +34,7 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="text-2xl font-bold text-[#010147]">
-                <Image src={"/logo.jpeg"} alt='' width={130} height={100} />
+                <Image src={"/log.png"} alt='' width={130} height={100} />
               </div>
             </div>
             <div className="hidden md:flex space-x-8">
@@ -292,7 +292,7 @@ Launched in 2024 with over 1,700 attendees, the conference has become a hub of i
       </section>
 
       {/* Volunteers Section - Full Section with Lots of Pictures */}
-      <section id="volunteers" className="py-20 bg-gradient-to-br from-[#010147]/5 to-[#9e94ff]/10">
+      <section id="volunteers" className="py-20 ">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#010147] mb-6">Our Amazing Volunteers</h2>
@@ -319,7 +319,7 @@ Launched in 2024 with over 1,700 attendees, the conference has become a hub of i
           {/* Event Pictures from Last Year */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-[#010147] mb-6 text-center">Event Highlights 2024</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-4">
               {[
                 '/AW3C-31.jpg',
                 '/AW3C-79.jpg', 
