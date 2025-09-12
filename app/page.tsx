@@ -299,7 +299,7 @@ Launched in 2024 with over 1,700 attendees, the conference has become a hub of i
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">The backbone of our conference - dedicated individuals who made it all possible</p>
           </div>
           
-          {/* Main Group Picture */}
+          {/* Main Group hhhß Picture */}
           <div className="mb-12">
             <div className="bg-gradient-to-r from-[#010147]/10 to-[#9e94ff]/20 p-8 rounded-2xl">
               <div className="w-full h-[500px] rounded-xl overflow-hidden mb-4">
